@@ -1,21 +1,9 @@
 # parametric-knob-maker
-A specifically made script for generating fully customizable knobs for making toolless hex screws
-
-## StoryTime
-I needed a tool less screw for my previous project and I really don't like winged nuts. Also, they were sold out in my local hardware store, so I designed this OpenScad script. It can produce any screw knob in any size. It was a really fun project and I quite enjoyed it.
+Generate customizable knobs for making toolless hex screws.
 
 
 ## easily create knobs with full customizable parameters
 ![img](https://github.com/aminGhafoory/parametric-knob-maker/blob/main/images/2022-08-20_191937.png)
-
-
-
-
-
-
-
-
-
 
 ![img](https://github.com/aminGhafoory/parametric-knob-maker/blob/main/images/2022-08-20_191947.png)
 ![img](https://github.com/aminGhafoory/parametric-knob-maker/blob/main/images/2022-08-20_191952.png)
@@ -23,39 +11,43 @@ I needed a tool less screw for my previous project and I really don't like winge
 ![img](https://github.com/aminGhafoory/parametric-knob-maker/blob/main/images/2022-08-20_192142.png)
 
 
-
-
-
-
-
-
 ## Issues
-This is my first OpenScad project. If you find any issues, please let me know.
+This is cloned from [/aminGhafoory/parametric-knob-maker][2];
 
-
+[2]: https://github.com/aminGhafoory/parametric-knob-maker/
 
 
 ## HOW TO USE
-1. download  OpenScad from [OpenScad.org](https://openscad.org/) for mac, win and linux
-2. open the script in OpenScad 
-3. adjust the parameters to your likings.
-> ![img](https://github.com/aminGhafoory/parametric-knob-maker/blob/main/images/2022-08-20_194317.png)
-4. Hit F5 button
-5. Hit F6 button
-6. Print!
 
+PreRequisit OpenSCAD installed.
 
+Download to you [Library Location][1]
+[1]: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Libraries
 
+In Openscad file load library and call hex_knob
 
+    include <parametric-knob-maker/parametric_hex_knob.scad> 
+
+    hex_knob();
+
+    //Optional paramters
+
+    // hex_knob(
+    //   knob_height, 
+    //   knob_diam, 
+    //   screwhead_facetoface,
+    //   screwhead_depth,
+    //   thru_hole_diam,
+    //   num_grip_cutouts,
+    //   grip_cutout_diam,
+    //   cutout_radius_adj
+    // );
 
 
 ## DIN standard 
 
-if want to make a new knob use this sheet
 s in this sheet is equivalent for face-to-face length in code
 
 ![DIN933](https://user-images.githubusercontent.com/74732606/185756495-7f6f163c-b045-4414-8dcd-da2969b41138.jpg)
 
 
-
-It's simple, easy and useful i hope you like it. Have fun 🎈
